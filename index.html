@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Number Guessing Game 1- 100</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <p>in how many rounds you think you can giss the number?</p>
+                </div>
+                <div class="rbuttons">
+                    <input type="radio" name="num" id="num1" value="4">
+                    <label for="num1">4</label>
+                    <input type="radio" name="num" id="num2" value="5">
+                    <label for="num2">5</label>
+                    <input type="radio" name="num" id="num3" value="6">
+                    <label for="num3">6</label>
+                    <input type="radio" name="num" id="customeNum">
+                    <label for="customeNum">custom</label>
+                    <input type="number" name="userNum" id="userNum">
+                </div>
+                <div id="output2"></div>
+            </article>
+
+            <article>
+                <div>
+                    <input type="number" name="guessNum" id="guessNum">
+                    <p id="output"></p>
+                </div>
+                <div>
+                    <input type="submit" value="guess" onclick="guess()" class="btn">
+                    <button class="btn none" id="tryAgain" onclick="rest()">Try Again?</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
